@@ -18,7 +18,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.html$/,
+				test: /\.(html|php)$/,
 				loader: 'html-loader'
 			},
 			{
