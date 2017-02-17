@@ -8,10 +8,4 @@ import {Component} from "@angular/core";
 	templateUrl: './templates/angular2-example-app.php'
 })
 
-export class AppComponent {
-	navCollapse = true;
-
-	toggleCollapse() {
-		this.navCollapse = !this.navCollapse;
-	}
-}
+export class AppComponent {}
