@@ -45,18 +45,12 @@ module.exports = {
 			},
 			{
 				test: /\.ts$/,
-				loaders: ['awesome-typescript-loader', 'angular2-template-loader']
+				loaders: ['awesome-typescript-loader']
 			}
 		]
 	},
 
 	plugins: [
-		new webpack.ContextReplacementPlugin(
-			// The (\\|\/) piece accounts for path separators in *nix and Windows
-			/angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-			helpers.root('app'), // location of your src
-			{} // a map of your routes
-		),
 		new webpack.optimize.CommonsChunkPlugin({
 			name: ['app', 'vendor', 'polyfills']
 		}),
